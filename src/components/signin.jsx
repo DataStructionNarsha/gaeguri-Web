@@ -5,7 +5,7 @@ const signIn = () => {
   return (
     <>
       <div>signIn</div>
-      <CusBtn href="/Signup" location="히원가입" />
+      <CusBtn href="/Signup" location="회원가입" />
     </>
   );
 };
