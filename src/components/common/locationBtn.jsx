@@ -1,7 +1,6 @@
 import React from "react";
 
 const CusButton = ({ href, location }) => {
-  console.log(href);
   const clickMe = () => {
     window.location.href = href;
   };
