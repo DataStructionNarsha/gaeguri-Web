@@ -5,10 +5,10 @@ const Main = () => {
   return (
     <>
       <div>Main</div>
-      <CusBtn href="/Signin" location="로그인" />
-      <CusBtn href="/Signup" location="회원가입" />
-      <CusBtn href="/CreateProj" location="만들기" />
-      <CusBtn href="/SearchProj" location="찾기" />
+      <CusBtn href="/signin" location="로그인" />
+      <CusBtn href="/signup" location="회원가입" />
+      <CusBtn href="/createproj" location="만들기" />
+      <CusBtn href="/searchproj" location="찾기" />
     </>
   );
 };

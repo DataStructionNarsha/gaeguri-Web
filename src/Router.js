@@ -5,16 +5,18 @@ import Signin from "./components/signin";
 import Signup from "./components/signup";
 import Create from "./components/Create";
 import Search from "./components/Search";
+import Header from "./components/Header";
 
 const Router = () => {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/CreateProj" element={<Create />} />
-        <Route path="/SearchProj" element={<Search />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </BrowserRouter>
   );
