@@ -6,50 +6,23 @@ const CusPassInput = ({type, placeholder1, placeholder2 }) => {
     const [passCh, setPassCh] = useState("");
     //const [change,setChange] = useState("");
 
-    let style1 = {
-        width : "50px",
-        height : "50px",
-        background : "green"
-
-    };
-    let style2 = {
-        width : "50px",
-        height : "50px",
-        background : "red"
-
-    };
-    const fstyle1 = () =>{
-        return(
-            <div style={{style1}}>asdsadsasad</div>
-        )
-    };
-    const fstyle2 = () =>{
-        return(
-            <div style={{style2}}>asdsadsasad</div>
-        )
-    };
-    /*
-    const Ch = ()=>{
-        if(pass == passCh){
-            console.log("yfyftfyt");
-            return (style1);
-
-        }
-        else {
-            return (
-                <div style={style2}></div>
-            );
-
-        }
-    }*/
+    let tf = (true);
+    if(tf == true){
+        Tru();
+    }
+    else{
+        Fal();
+    }
 
     setTimeout(() => {
         if(pass == passCh){
             console.log("qqwrqgegnoevvenovonf");
-            fstyle1();
+            //변수를 true로 바꾼ㅁ
+            tf = true;
         }
         else {
-            fstyle2();
+            //변수를 else로 바꾼ㅁ
+            tf = false;
         }
     }, 0);
 
@@ -57,8 +30,22 @@ const CusPassInput = ({type, placeholder1, placeholder2 }) => {
     <>
     <input type={type} placeholder={placeholder1} onChange={(e)=>setPass(e.target.value)} value={pass}/>
     <input type={type} placeholder={placeholder2} onChange={(e)=>{setPassCh(e.target.value);}} value={passCh}/>
+
     </>
   )
 }
+const  Tru = () => {
+    return(
+        <div>
+            password is same
+        </div>
+    )
+};
+
+
+
+
+
+
 
 export default CusPassInput

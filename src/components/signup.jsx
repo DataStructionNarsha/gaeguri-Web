@@ -2,12 +2,7 @@ import React from "react";
 import CusBtn from "./common/locationBtn";
 import "./common/signup.css";
 import CusChPass from "./commonSu/CusPassInput"
-const signup = () => {
-  const passwordCheck = () => {
-    setTimeout(setimeout(),0)
-  };
-  const setimeout = ()=> {
-  };
+
 
 
   return (
@@ -21,7 +16,7 @@ const signup = () => {
             <input type="text" name = "email" placeholder="email"/>
             <input type="text" name = "id" placeholder="id"/>
             <input type="text" name = "name" placeholder="name"/>
-            <CusChPass type={"password"} placeholder1={"비밀번호를 입력해주세요"} placeholder2={"비밀번호 확인"}/>
+            <CusChPass type={"password"} placeholder1={"비밀번호를 입력해주세요"} placeholder2={"비밀번호 확인"} />
             <input type="text" name="stac" placeholder="stac"/>
             <input type="submit"/>
           </form>
@@ -34,6 +29,6 @@ const signup = () => {
     </>
     
   );
-};
+
 
 export default signup;
