@@ -7,8 +7,8 @@ const Main = () => {
       <div>Main</div>
       <CusBtn href="/signin" location="로그인" />
       <CusBtn href="/signup" location="회원가입" />
-      <CusBtn href="/createproj" location="만들기" />
-      <CusBtn href="/searchproj" location="찾기" />
+      <CusBtn href="/create" location="만들기" />
+      <CusBtn href="/search" location="찾기" />
     </>
   );
 };
