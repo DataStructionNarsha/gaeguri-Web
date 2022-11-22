@@ -15,26 +15,26 @@ import Page3 from "./common_Cr/Crpage3";
 //   // }
 // }
 const create = () => {
-  const [page, setPage] = useState(0);
-  const NextPage = () => {
-    setPage((e) => e + 1);
-    console.log(page);
-  };
+  // const [page, setPage] = useState(0);
+  // const NextPage = () => {
+  //   setPage((e) => e + 1);
+  //   console.log(page);
+  // };
 
-  // onClick={
-  //   PreviousPage()
-  //   // if (e == 0) {
-  //   //   e + 1;
-  //   // }
-  // }
-  const PreviousPage = () => {
-    setPage((e) => e - 1);
-    console.log(page);
-  };
+  // // onClick={
+  // //   PreviousPage()
+  // //   // if (e == 0) {
+  // //   //   e + 1;
+  // //   // }
+  // // }
+  // const PreviousPage = () => {
+  //   setPage((e) => e - 1);
+  //   console.log(page);
+  // };
   return (
     <>
       <h1>새로운 프로젝트 생성</h1>
-      <nav>
+      {/* <nav>
         <div></div>
         <div></div>
         <div></div>
@@ -43,7 +43,7 @@ const create = () => {
       <nav>
         <button onClick={PreviousPage}>이전</button>
         <button onClick={NextPage}>다음</button>
-      </nav>
+      </nav> */}
     </>
   );
 };
