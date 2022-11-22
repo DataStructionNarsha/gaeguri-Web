@@ -7,8 +7,12 @@ const Header = () => {
     <header>
       <div>
         <span>Header</span>
-        <span>프로젝트 찾기</span>
-        <span>프로젝트 만들기</span>
+        {isloggin ? (
+          <>
+            <span>프로젝트 찾기</span>
+            <span>프로젝트 만들기</span>
+          </>
+        ) : null}
       </div>
       <div>
         {isloggin ? (
