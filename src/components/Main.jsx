@@ -22,9 +22,9 @@ const Main = () => {
       <CusBtn href="/signup" location="회원가입" />
       <CusBtn href="/createproj" location="만들기" />
       <CusBtn href="/searchproj" location="찾기" />
-      
+
       <img src="" alt="" />
-        <p>포지션</p>
+      <p>포지션</p>
       <nav>
         <header>
         <Pobtn>웹</Pobtn>
@@ -50,7 +50,6 @@ const Main = () => {
               return <ProjBoxNav title={e.title} stac={e.positionEntity[0].categoryEntity.category_Name} info={e.body} index={i} age={e.age} expected_period={e.expected_period}/>
             })}
           </nav>
-        </nav>
         </header>
       </nav>
     </>

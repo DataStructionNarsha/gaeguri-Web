@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { isLogged } from "./store/atom";
 import "./Header.css";
 
 const Header = () => {
-  const [isloggin, setloggin] = useState(false);
+  const [isloggin, setloggin] = useRecoilState(isLogged);
   return (
     <header>
       <div>
