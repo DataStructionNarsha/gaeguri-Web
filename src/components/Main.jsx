@@ -3,6 +3,7 @@ import CusBtn from "./common/locationBtn";
 import {Pobtn, Setbtn, ProjectBox} from "./style/MainStyle"
 import axios from "axios";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const ServerGet = (set)=>{
   const serverUrl = "http://10.80.163.160:1080/api/post/infos"
@@ -15,6 +16,9 @@ const ServerGet = (set)=>{
 
 const Main = () => {
   let [getServer, setGetServer] = useState([]);
+  useEffect(()=>{
+    ServerGet(setGetServer);
+  }, [])
   return (
     <>
       <div>Main</div>
@@ -41,11 +45,6 @@ const Main = () => {
               <Setbtn>게임</Setbtn>
               <Setbtn>디자인</Setbtn>  
           </p>
-          <nav>
-            <button onClick={()=>{
-              ServerGet(setGetServer);
-              console.log(getServer);
-            }}>dd</button>
             {getServer.map((e, i)=>{
               return <ProjBoxNav title={e.title} stac={e.positionEntity[0].categoryEntity.category_Name} info={e.body} index={i} age={e.age} expected_period={e.expected_period}/>
             })}
