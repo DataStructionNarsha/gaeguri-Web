@@ -30,9 +30,14 @@ export const Setbtn = styled.button`
     &:hover{
         
     }
+`;
 
-
-
-
+export const ProjectBox = styled.div`
+    width: 250px;
+    height: 120px;
+    background-color: gray;
+    border : 1px;
+    box-shadow : none;
+    display:block;    
 
 `;
