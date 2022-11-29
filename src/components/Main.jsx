@@ -1,6 +1,6 @@
 import React from "react";
 import CusBtn from "./common/locationBtn";
-import {Pobtn, Setbtn, ProjectBox} from "./style/MainStyle"
+import {Pobtn, Setbtn, ProjectBox} from "./Style/MainStyle.js"
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -24,8 +24,8 @@ const Main = () => {
       <div>Main</div>
       <CusBtn href="/signin" location="로그인" />
       <CusBtn href="/signup" location="회원가입" />
-      <CusBtn href="/createproj" location="만들기" />
-      <CusBtn href="/searchproj" location="찾기" />
+      <CusBtn href="/create" location="만들기" />
+      <CusBtn href="/search" location="찾기" />
 
       <img src="" alt="" />
       <p>포지션</p>

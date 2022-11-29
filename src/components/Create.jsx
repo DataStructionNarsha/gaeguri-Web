@@ -124,6 +124,11 @@ const Create = () => {
   return (
     <>
       <h1>새로운 프로젝트 생성</h1>
+      <nav>
+      <div></div>
+      <div></div>
+      <div></div>
+      </nav>
       {/* <nav>
         <div></div>
         <div></div>
