@@ -94,6 +94,7 @@ const Page3 = ({ members, setMembers }) => {
     <>
       <p>마지막으로 당신이 원하는 팀원의 정보를 입력해주세요</p>
       <nav>
+        {}
         <Page3Members></Page3Members>
         <button
           onClick={() => {
